@@ -95,10 +95,11 @@
     }
 
     .bar{
-      height: 30px;
-      background-color: brown;
-      border-top: 2px solid black;
-      border-bottom: 2px solid black;
+      height: 40px;
+      background-color: #a52a2a;
+      background:linear-gradient(#000 -90%, #a52a2a 96% ,  #000);
+      /* border-top: 2px solid black;
+      border-bottom: 2px solid black; */
     }
 
     .background{
@@ -145,5 +146,11 @@
     .bg{
       width: 100%;
       overflow-x: hidden;
+      
     }
 </style>
+
+<script>
+  var x = screen.height - ($('.icon-bar').height() + $('.logo').height() + $('.bar').height());
+  $('.bg').css("height",x - 100)
+</script>
