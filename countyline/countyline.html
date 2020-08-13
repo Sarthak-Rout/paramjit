@@ -61,7 +61,7 @@
       
       <div class="section bar"></div>
       <div class="section background">
-        <img src="./slider-3.jpg" alt="" width="auto">
+        <img class="bg" src="./slider-3.jpg" alt="">
       </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -75,6 +75,7 @@
     body{
         margin: 0;
         padding: 0;
+        overflow: hidden;
     }
     .icon-bar{
         margin: 0;
@@ -140,5 +141,9 @@
     }
     .active-nav-link{
       color:cornflowerblue;
+    }
+    .bg{
+      width: 100%;
+      overflow-x: hidden;
     }
 </style>
