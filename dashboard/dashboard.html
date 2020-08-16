@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Dashboard</title>
   </head>
@@ -16,15 +17,47 @@
         <div class="col-md-2">
           <img class="logo" src="" width="30" height="30" class="d-inline-block align-top" alt="logo" loading="lazy">
         </div>
-        <div class="col-md-7">
+        <div class="col-md-6">
           <form>
-            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control search-bar" type="search" placeholder="Search" aria-label="Search">
           </form>
+        </div>
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-md-1">
+                <i class="fa fa-file" aria-hidden="true"></i>
+              </div>
+            <div class="col-md-1">
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </div>
+            <div class="col-md-1">
+              <i class="fa fa-question-circle" aria-hidden="true"></i>
+            </div>
+            <div class="col-md-1">
+              <p>Help</p>
+            </div>
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-2">
+                  <i class="fa fa-users" aria-hidden="true"></i>
+                </div>
+                <div class="col-md-1">
+                  <i class="fa fa-caret-down" aria-hidden="true" style="border-right:none;"></i>
+                </div>
+                <div class="col">
+                  <p style="padding-bottom:0; margin-bottom:0;">First Last Name</p>
+                  <p style="padding-top:0; margin-top:0; font-size:10px;">Department</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
         </div>
       </div>
     </div>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -36,27 +69,51 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+        <a class="nav-link" href="#">Activities</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        <a class="nav-link" href="#">Customers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Vendors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Payroll and HR</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Financial</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Reports</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Documents</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Setup</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Payments</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Fixed Assets</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Statistical Analysis</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link dash-dots" href="#">...</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </div>
 </nav>
 
@@ -69,6 +126,41 @@
 
 <style>
   .logo{
-    margin:
+    margin:10px;
+    padding: 2px;
+  }
+  .search-bar{
+    margin: 10px;
+  }
+  .fa{
+    margin: 10px;
+    padding: 10px;
+  }
+  .fa-caret-down{
+    margin-left: 0;
+    border-right: 1px solid #ced4da;
+  }
+  .fa-question-circle{
+    padding-left: 0;
+  }
+  .fa-file{
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+  }
+  .fa-users{
+    border-left:  1px solid #ced4da;
+  }
+  p{
+    margin: 10px;
+    padding-top: 8px;
+    font-size: 12px;
+  }
+  .navbar{
+    background-color: #647897;
+    color: #fff;
+  }
+   a{
+    color: #fff;
   }
 </style>
