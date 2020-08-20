@@ -16,7 +16,7 @@
       <div class="col-12">
         <div class="row  justify-content-end">
           <div class="col-md-4 col-8">
-            
+
               <div class="icons">
                 <ul>
                   <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
@@ -25,11 +25,11 @@
                   <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
                   <li><a href="#" class="youtube"><i class="fa fa-youtube"></i></a></li>
                 </ul>
-                
+
               </div>
           </div>
         </div>
-        
+
       </div>
     </div>
     <div class="row logo">
@@ -57,11 +57,46 @@
         </div>
       </div>
     </div>
-      
-      
+
+
       <div class="section bar"></div>
-      <div class="section background">
-        <img class="bg" src="./slider-3.jpg" alt="">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="bg.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block" style="text-align:left;">
+                  <div class="card" style="width: 26rem; position:absolute; top: -360px; left:100px; background-image:url('bg2.jpg'); background-size:cover;">
+                    <div class="card-body">
+                      <h4 class="card-title" style="background-color:#10a5f5; opacity: .75;padding: 8px; font-weight: 400;">Freight Management Logistics</h4>
+                      <p class="card-text" style="background-color:#000; opacity: .65; width: 18rem; text-align:left; padding-left:5px; font-size:14px;">With more than 20 years in the transportation industry, Freight Management Logistics(FML)can design a program exclusively for your
+                      independent shipping needs to maximize savings and improve transit time.</p>
+                      <button type="button" class="btn btn-outline-secondary" style="color:#000; background-color: #fff;border: 1px solid #fff; border-radius: 0;">GET A QUOTE</button>
+                      <button type="button" class="btn btn-outline-secondary" style="color:#fff; border: 1px solid #fff;border-radius: 0;">FIND OUT MORE</button>
+                    </div>
+                  </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-6" style="margin-bottom:40px;">
+          <h3 class="text-center" style="font-weight:800; margin: 20px 0 40px 0;">EXPERIENCE LOGISTICS AS IT SHOULD BE</h3>
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <img src="Shipper-Icon-1.png" alt="" height="100" width="120">
+              <h5>SHIPPERS</h5>
+              <small>Our team of dedicated, Prosponsive logistics professional pride themselves on meeting our customers needs.</small>
+            </div>
+            <div class="col-md-6 text-center">
+              <img src="Truck-Icon-1.png" alt="" height="100" width="100">
+              <h5>CARRIERS</h5>
+              <small>With thousands of shipments across the country, wherever you need to go, we have a load to get you there and back.</small>
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -69,13 +104,12 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   </body>
-</html> 
+</html>
 
 <style>
     body{
         margin: 0;
         padding: 0;
-        overflow: hidden;
     }
     .icon-bar{
         margin: 0;
@@ -89,7 +123,7 @@
     .icons a{
         color: #fff;
         margin-right: 20px;
-    } 
+    }
     ul li {
       display: inline;
     }
@@ -131,7 +165,7 @@
 
     }
     .nav li{
-      border-right: 1px solid #000; 
+      border-right: 1px solid #000;
       margin-right: 10px;
       padding-right:12px ;
       font-size: 13px;
@@ -146,11 +180,9 @@
     .bg{
       width: 100%;
       overflow-x: hidden;
-      
+
+    }
+    h5{
+      margin: 10px 0;
     }
 </style>
-
-<script>
-  var x = screen.height - ($('.icon-bar').height() + $('.logo').height() + $('.bar').height());
-  $('.bg').css("height",x - 100)
-</script>
