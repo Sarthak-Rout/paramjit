@@ -12,54 +12,53 @@
     <title>Countyline</title>
   </head>
   <body>
-    <div class="row icon-bar">
-      <div class="col-12">
-        <div class="row  justify-content-end">
-          <div class="col-md-4 col-8">
-
-              <div class="icons">
-                <ul>
-                  <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                  <li> <a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="#" class="google"><i class="fa fa-google"></i></a></li>
-                  <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                  <li><a href="#" class="youtube"><i class="fa fa-youtube"></i></a></li>
-                </ul>
-
-              </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
+      <ul class="nav justify-content-center top-nav" style="  background-color: brown;width: 100%;">
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="transform:translateX(-70px)"><i class="fa fa-envelope-o" aria-hidden="true"></i><span class="right-bar">Dispatch@CountylineTransport.com</span> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us<span class="right-bar">|</span> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Get a Quote<span class="right-bar">|</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Load Board<span class="right-bar">|</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Track a Shipment<span class="right-bar">|</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Customer Login</a>
+        </li>
+      </ul>
     <div class="row logo">
       <div class="col-md-6">
         <div class="row justify-content-end">
           <div class="col-7">
-            <img src="./logo.png" alt="">
+            <img src="./logo.png" alt="" height="70" width="170">
           </div>
         </div>
       </div>
       <div class="col-md-6">
         <div class="row justify-content-end">
           <div class="col-md-8">
-            <p style="padding: 5px;"><i class="fa fa-phone" aria-hidden="true"></i> <span class="phone-no"> 314-737-4302</span></p>
+            <p style="color:brown; font-weight:700;">CALL NOW! 972-316-7928</p>
           </div> <br>
           <div class="col-md-12">
             <ul class="nav">
-              <li class="active-nav-link">Home</li>
-              <li>About Us <i class="fa fa-caret-down" aria-hidden="true"></i></li>
-              <li>Customer Login</li>
-              <li>Request a Quote</li>
-              <li id="last-nav">Become a Carrier</li>
+              <li class="active-nav-link">ABOUT</li>
+              <li>SERVICE</li>
+              <li>CARRIERS</li>
+              <li>EQUIPMENT SALES</li>
+              <li>CAREERS</li>
+              <li id="last-nav">DRIVE WITH US</li>
             </ul>
           </div>
         </div>
       </div>
     </div>
 
-
-      <div class="section bar"></div>
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -110,6 +109,7 @@
     body{
         margin: 0;
         padding: 0;
+        overflow: hidden;
     }
     .icon-bar{
         margin: 0;
@@ -126,19 +126,6 @@
     }
     ul li {
       display: inline;
-    }
-
-    .bar{
-      height: 40px;
-      background-color: #a52a2a;
-      background:linear-gradient(#000 -90%, #a52a2a 96% ,  #000);
-      /* border-top: 2px solid black;
-      border-bottom: 2px solid black; */
-    }
-
-    .background{
-      background-size: cover;
-      background-repeat: no-repeat;
     }
     .logo{
       padding: 10px;
@@ -158,21 +145,24 @@
       color: darkcyan;
     }
     .nav{
-      border-top: 1px solid rgb(201, 195, 195);
       padding: 4px;
-      padding-top: 10px;
       width: 70%;
 
     }
     .nav li{
-      border-right: 1px solid #000;
+      border-right: 1px solid brown;
       margin-right: 10px;
       padding-right:12px ;
-      font-size: 13px;
+      font-size: 11px;
+      color: brown;
+      font-weight: 700;
       cursor: pointer;
     }
     #last-nav{
       border: none;
+      background-color: brown;
+      color: #fff;
+      padding: 2px;
     }
     .active-nav-link{
       color:cornflowerblue;
@@ -184,5 +174,21 @@
     }
     h5{
       margin: 10px 0;
+    }
+    .top-nav .nav-link{
+      color: #fff;
+      font-size: 10px;
+      font-weight: 500;
+      text-decoration: none;
+      border-top: none;
+      padding: 5px 0;
+    }
+
+    .top-nav li{
+      border-right:none;
+      padding: 0;
+    }
+    .right-bar{
+      margin: 0 10px;
     }
 </style>
