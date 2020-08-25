@@ -18,46 +18,55 @@
       <div class="col-md-6">
         <div class="row justify-content-center">
           <div class="col-2">
-            <img src="./logo.png" alt="" height="80" width="210">
+            <img src="./logo.png" alt="" height="70" width="190">
           </div>
         </div>
       </div>
       <div class="col-md-6">
-        <div class="row justify-content-end">
-          <div class="col-md-9">
-            <p style="color:#9A0015; font-weight:700;"><i class="fa fa-phone" aria-hidden="true"></i>972-316-7928</p>
+        <div class="row">
+          <div class="col-md-12">
+            <p id="phone" style="color:#9A0015; font-weight:700; float:right; margin-right:250px; "><i class="fa fa-phone" aria-hidden="true"></i>972-316-7928</p>
           </div> <br>
           <div class="col-md-12">
-            <ul class="nav">
-              <li class="active-nav-link">ABOUT</li>
-              <li>SERVICE</li>
-              <li>CARRIERS</li>
-              <li>EQUIPMENT SALES</li>
-              <li>CAREERS</li>
-              <li id="last-nav">DRIVE WITH US</li>
+            <ul class="nav" style="float:right; margin-right:225px;">
+              <li class="active-nav-link">Home<span class="right-bar">|</span> </li>
+              <li>About Us<span class="right-bar">|</span></li>
+              <li>Customer Login<span class="right-bar">|</span></li>
+              <li>Request A Quote<span class="right-bar">|</span></li>
+              <li>Become A Carrier<span class="right-bar">|</span></li>
+              <li id="last-nav">Contact Us</li>
             </ul>
           </div>
         </div>
       </div>
       </div>
-      <ul class="nav justify-content-center top-nav" style="  background-color: brown;width: 100%;">
+      <div class="row">
+        <div class="col-md-6">
+
+        </div>
+        <div class="col-md-6">
+
+        </div>
+
+      </div>
+      <ul class="nav top-nav">
         <!-- <li class="nav-item">
           <a class="nav-link" href="#" style="transform:translateX(-100px)"><i class="fa fa-envelope-o" aria-hidden="true"></i><span class="right-bar">Dispatch@CountylineTransport.com</span> </a>
         </li> -->
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us<span class="right-bar">|</span> </a>
+          <a class="nav-link" href="#">CORE COMPETENCIES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Get a Quote<span class="right-bar">|</span></a>
+          <a class="nav-link" href="#">FREIGHT SERVICES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Load Board<span class="right-bar">|</span></a>
+          <a class="nav-link" href="#">LOGISTICS MANAGEMENT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Track a Shipment<span class="right-bar">|</span></a>
+          <a class="nav-link" href="#">TRUCKLOAD TRANSPORTATION</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Customer Login</a>
+          <a class="nav-link" href="#">WAREHOUSING</a>
         </li>
       </ul>
     </section>
@@ -95,13 +104,9 @@
               <h6>CARRIERS</h6>
               <p class="desc">With thousands of shipments across the country, wherever you need to go, we have a load to get you there and back.</p>
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
@@ -144,30 +149,21 @@
     .nav{
       padding: 4px;
       width: 70%;
-      border-top: 1px solid #eee;
+      border-top: 1px solid #e8e8e8;
 
     }
     .nav li{
-      border-right: 1px solid brown;
-      margin-right: 10px;
-      padding-right:12px ;
       font-size: 11px;
       color: brown;
-      font-weight: 700;
       cursor: pointer;
-    }
-    #last-nav{
-      border: none;
-      background-color: brown;
-      color: #fff;
-      padding: 2px;
-    }
-    .active-nav-link{
-      color:cornflowerblue;
     }
     h6{
       margin: 10px 0 0 0;
       font-weight: 700;
+    }
+    .top-nav{
+      background-color: brown;
+      width: 100%;
     }
     .top-nav .nav-link{
       color: #fff;
@@ -176,10 +172,9 @@
       text-decoration: none;
       padding: 5px 0;
     }
-
     .top-nav li{
-      border-right:none;
-      padding: 0;
+      border-right:1px solid #fff;
+      padding: 0 10px;
     }
     .right-bar{
       margin: 0 10px;
@@ -203,4 +198,12 @@
        border-radius: 50%;
        margin-right: 4px;
      }
+     @media screen and (max-width: 600px) {
+  #phone{
+    margin-right: 0;
+  }
+  .nav{
+    margin-right: 0;
+  }
+}
 </style>
