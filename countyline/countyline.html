@@ -12,10 +12,38 @@
     <title>Countyline</title>
   </head>
   <body>
+    <section class="header-content">
+
+      <div class="row logo">
+      <div class="col-md-6">
+        <div class="row justify-content-center">
+          <div class="col-2">
+            <img src="./logo.png" alt="" height="80" width="210">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row justify-content-end">
+          <div class="col-md-9">
+            <p style="color:#9A0015; font-weight:700;"><i class="fa fa-phone" aria-hidden="true"></i>972-316-7928</p>
+          </div> <br>
+          <div class="col-md-12">
+            <ul class="nav">
+              <li class="active-nav-link">ABOUT</li>
+              <li>SERVICE</li>
+              <li>CARRIERS</li>
+              <li>EQUIPMENT SALES</li>
+              <li>CAREERS</li>
+              <li id="last-nav">DRIVE WITH US</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
       <ul class="nav justify-content-center top-nav" style="  background-color: brown;width: 100%;">
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="#" style="transform:translateX(-100px)"><i class="fa fa-envelope-o" aria-hidden="true"></i><span class="right-bar">Dispatch@CountylineTransport.com</span> </a>
-        </li>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link" href="#">Contact Us<span class="right-bar">|</span> </a>
         </li>
@@ -32,32 +60,8 @@
           <a class="nav-link" href="#">Customer Login</a>
         </li>
       </ul>
-    <div class="row logo">
-      <div class="col-md-6">
-        <div class="row justify-content-center">
-          <div class="col-2">
-            <img src="./logo.png" alt="" height="80" width="210">
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="row justify-content-end">
-          <div class="col-md-9">
-            <p style="color:#9A0015; font-weight:700;">CALL NOW! 972-316-7928</p>
-          </div> <br>
-          <div class="col-md-12">
-            <ul class="nav">
-              <li class="active-nav-link">ABOUT</li>
-              <li>SERVICE</li>
-              <li>CARRIERS</li>
-              <li>EQUIPMENT SALES</li>
-              <li>CAREERS</li>
-              <li id="last-nav">DRIVE WITH US</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
+
 
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -111,6 +115,13 @@
         padding: 0;
         overflow-x: hidden;
     }
+
+    .header-content{
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: #fff;
+    }
     .icon-bar{
         margin: 0;
         padding: 0;
@@ -133,6 +144,7 @@
     .nav{
       padding: 4px;
       width: 70%;
+      border-top: 1px solid #eee;
 
     }
     .nav li{
@@ -162,7 +174,6 @@
       font-size: 10px;
       font-family: arial Black;
       text-decoration: none;
-      border-top: none;
       padding: 5px 0;
     }
 
@@ -184,5 +195,12 @@
      .carrier{
        width: 135px;
        height: 145px;
+     }
+     .fa-phone{
+       color: #fff;
+       background: #9A0015;
+       padding: 5px 6px;
+       border-radius: 50%;
+       margin-right: 4px;
      }
 </style>
