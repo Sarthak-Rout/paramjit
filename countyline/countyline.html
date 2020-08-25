@@ -49,7 +49,7 @@
         </div>
 
       </div>
-      <ul class="nav justify-content-center top-nav">
+      <ul class="nav top-nav">
         <!-- <li class="nav-item">
           <a class="nav-link" href="#" style="transform:translateX(-100px)"><i class="fa fa-envelope-o" aria-hidden="true"></i><span class="right-bar">Dispatch@CountylineTransport.com</span> </a>
         </li> -->
@@ -164,6 +164,7 @@
     .top-nav{
       background-color: brown;
       width: 100%;
+      padding: 0;
     }
     .top-nav .nav-link{
       color: #fff;
@@ -174,7 +175,7 @@
     }
     .top-nav li{
       border-right:1px solid #fff;
-      padding: 0 10px;
+      padding:6px 10px;
     }
     .right-bar{
       margin: 0 10px;
@@ -204,6 +205,12 @@
   }
   .nav{
     margin-right: 0;
+  }
+}
+@media screen and (min-width: 600px) {
+  .top-nav li{
+    position: relative;
+    right:-540px;
   }
 }
 </style>
